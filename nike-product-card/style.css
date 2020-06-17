@@ -1,0 +1,340 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-page {
+  overflow: hidden;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .card {
+  -webkit-box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.26);
+          box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.26);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 860px;
+}
+
+.main-page .card .shoe-img-container {
+  height: 500px;
+  width: 52%;
+  background-color: lightsalmon;
+  position: relative;
+}
+
+.main-page .card .shoe-img-container h1 {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 11rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.253);
+  z-index: 2;
+}
+
+.main-page .card .shoe-img-container .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  z-index: 2;
+}
+
+.main-page .card .shoe-img-container .logo:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.main-page .card .shoe-img-container .share-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+  color: #2175f5;
+  font-size: 20px;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+
+.main-page .card .shoe-img-container .share-btn:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+.main-page .card .shoe-img-container .shoe-img {
+  position: absolute;
+  top: 20%;
+  left: -40%;
+  z-index: 3;
+  width: 135%;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.main-page .card .shoe-img-container .gradients {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main-page .card .shoe-img-container .gradients .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main-page .card .shoe-img-container .gradients .gradient[color="blue"] {
+  background-image: linear-gradient(45deg, #0136af, #22abfa);
+  z-index: 1;
+}
+
+.main-page .card .shoe-img-container .gradients .gradient[color="red"] {
+  background-image: linear-gradient(45deg, #d62926, #ee625f);
+}
+
+.main-page .card .shoe-img-container .gradients .gradient[color="green"] {
+  background-image: linear-gradient(45deg, #11998e, #1ce669);
+}
+
+.main-page .card .shoe-img-container .gradients .gradient[color="orange"] {
+  background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
+}
+
+.main-page .card .shoe-img-container .gradients .gradient[color="black"] {
+  background-image: linear-gradient(45deg, #111, #666);
+}
+
+.main-page .card .info-container {
+  height: 500px;
+  width: 48%;
+  background-color: white;
+  position: relative;
+  padding: 23px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-page .card .info-container .shoe-name {
+  text-transform: capitalize;
+  padding-bottom: 5px;
+  border-bottom: 1.1px solid rgba(0, 0, 0, 0.15);
+  padding: 14px 0;
+  padding-top: 0 !important;
+}
+
+.main-page .card .info-container .shoe-name h3 {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.main-page .card .info-container .shoe-info {
+  padding-bottom: 5px;
+  border-bottom: 1.1px solid rgba(0, 0, 0, 0.15);
+  padding: 14px 0;
+}
+
+.main-page .card .info-container .shoe-info h3 {
+  margin-bottom: 10px;
+}
+
+.main-page .card .info-container .colors {
+  padding-bottom: 5px;
+  border-bottom: 1.1px solid rgba(0, 0, 0, 0.15);
+  padding: 14px 0;
+}
+
+.main-page .card .info-container .colors .color-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 13px;
+}
+
+.main-page .card .info-container .colors .color-container .color {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin-right: 20px;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+
+.main-page .card .info-container .colors .color-container .color:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.main-page .card .info-container .colors .color-container .color[color="blue"] {
+  background: #2175f5;
+}
+
+.main-page .card .info-container .colors .color-container .color[color="red"] {
+  background: #f84848;
+}
+
+.main-page .card .info-container .colors .color-container .color[color="green"] {
+  background: #29b864;
+}
+
+.main-page .card .info-container .colors .color-container .color[color="orange"] {
+  background: #ff5521;
+}
+
+.main-page .card .info-container .colors .color-container .color[color="black"] {
+  background: #444;
+}
+
+.main-page .card .info-container .sizes {
+  padding-bottom: 5px;
+  border-bottom: 1.1px solid rgba(0, 0, 0, 0.15);
+  padding: 14px 0;
+}
+
+.main-page .card .info-container .sizes .size-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 13px;
+}
+
+.main-page .card .info-container .sizes .size-container .size {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(136, 136, 136, 0.308);
+  margin-right: 20px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+
+.main-page .card .info-container .sizes .size-container .size:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.main-page .card .info-container .cart-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 14px 0;
+  padding-bottom: 0 !important;
+}
+
+.main-page .card .info-container .cart-price .cart-btn {
+  height: 50px;
+  width: 160px;
+  border-radius: 5px;
+  color: white;
+  font-size: 19px;
+  background-color: #2175f5;
+  text-transform: capitalize;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .card .info-container .cart-price .cart-btn i {
+  margin-right: 8px;
+}
+
+.main-page .card .info-container .cart-price .cart-btn:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.main-page .card .info-container .cart-price .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .card .info-container .cart-price .price span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.row-title {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=style.css.map */
